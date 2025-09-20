@@ -8,28 +8,28 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # initializing Chrome webdriver
-driver = webdriver.Chrome()
+browser = webdriver.Chrome()
 
 # waiting for 5 seconds for the browser to load
 time.sleep(5)
 
 # navigating to the specified web page
-driver.get("https://suninjuly.github.io/text_input_task.html")
+browser.get("https://suninjuly.github.io/text_input_task.html")
 #waiting 5 seconds for the page to load
 time.sleep(5)
 
 # searching for textarea by CSS selector
-textarea = driver.find_element(By.CSS_SELECTOR, ".textarea")
+textarea = browser.find_element(By.CSS_SELECTOR, ".textarea")
 
 # entering phrase into textarea
 textarea.send_keys("Hello Selenium")
 time.sleep(5)
 
 # searching for the 'Submit' button on the web page
-submit_button = driver.find_element(By.CSS_SELECTOR, ".submit-submission")
+submit_button = browser.find_element(By.CSS_SELECTOR, ".submit-submission")
 
 # clicking on the button 'Submit'
 submit_button.click()
 
 # closing webdriver
-driver.quit()
+browser.quit()
