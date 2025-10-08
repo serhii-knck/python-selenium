@@ -9,7 +9,7 @@ from selenium.webdriver.firefox.options import Options
 def browser():
     """Function that initializes the browser and opens the specified link"""
     options = Options()
-    options.add_argument("--headless")  # для запуску без GUI (headless)
+    options.add_argument("--headless")
     driver = webdriver.Firefox(options=options)
     # waiting for 5 seconds for the browser to load
     time.sleep(5)
