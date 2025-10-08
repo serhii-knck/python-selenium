@@ -1,0 +1,26 @@
+[MASTER]
+# Не сканувати папки з тестами/зовнішніми бібліотеками, якщо потрібно
+ignore=venv,__pycache__,.git
+
+[MESSAGES CONTROL]
+# Вимикаємо дрібні попередження:
+disable=
+    C0114,  # missing-module-docstring
+    C0115,  # missing-class-docstring
+    C0116,  # missing-function-docstring
+    R0903,  # too-few-public-methods
+    R0914,  # too-many-locals
+    R0915,  # too-many-statements
+    W0511   # TODO/FIXME
+
+# Залишаємо тільки критичні помилки:
+enable=E,F
+
+[REPORTS]
+# Формат звіту
+output-format=colorized
+reports=no
+
+[FORMAT]
+max-line-length=88
+indent-string='    '  # 4 пробіли
